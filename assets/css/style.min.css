@@ -835,7 +835,11 @@ textarea:focus {
 	font-size: 16px;
 	line-height: 24px
 }
-
+@media (max-width: 767px) {
+	.page-contacts  {
+		padding-bottom: 20px;
+	}
+}
 .page-contacts a {
 	color: #3c4b5a
 }
@@ -4304,7 +4308,7 @@ input.btn-lg[type=button] {
 }
 
 .list--grid .card-house__inline {
-	display: flex;
+	display: inline-flex;
 	font-size: 12px;
 	line-height: 1.14;
 	margin-bottom: 15px;
@@ -4347,7 +4351,7 @@ input.btn-lg[type=button] {
 
 @media (min-width:769px) and (max-width:990px) {
 	.list--grid .card-house__inline-title {
-		min-width: 170px
+		min-width: auto
 	}
 }
 
@@ -8947,4 +8951,11 @@ input.btn-lg[type=button] {
 	body {
 		overflow-x: hidden;
 	}
+}
+.btn-searchs {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	max-width: 450px;
+	margin: 0 auto;
+	display: block;
 }
